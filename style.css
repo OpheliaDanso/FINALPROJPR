@@ -1,0 +1,134 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, red, yellow, green);
+}
+
+main {
+  display: flex;
+}
+
+.head {
+  background: url(https://www.imove-germany.de/static/de/img_L/Markt_Ghana_rdax_75s.jpg)
+    no-repeat center;
+  background-size: 100%;
+  padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  min-height: 10rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  list-style: none;
+  text-decoration: solid;
+  padding-top: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+#blogcontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  position: fixed;
+  right: 0%;
+  top: 50%;
+}
+
+.side h2 {
+  font-size: large;
+  color: white;
+  background-color: black;
+}
+
+.side ul {
+  font-size: large;
+}
+
+.top {
+  flex: 70%;
+  padding: 20px;
+}
+
+.first {
+  display: contents;
+  justify-content: space-around;
+}
+
+h2 {
+  padding: 0.7rem;
+}
+
+.first span {
+  padding: 0.7rem;
+}
+
+img {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+img:hover {
+  transform: scale(1.2);
+}
+
+p {
+  padding: 0.7rem;
+  margin: 0.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  width: 75rem;
+}
+
+.second {
+  display: contents;
+  padding: 1rem;
+}
+
+.third {
+  display: contents;
+  padding: 1rem;
+}
+
+.fourth {
+  display: contents;
+  padding: 1rem;
+}
+
+footer {
+  background-color: forestgreen;
+  min-height: 10rem;
+  text-align: end;
+  font-size: 0.9em;
+  padding: 1rem;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: larger;
+  font-style: oblique;
+}
+
+@media screen and (max-width: 400px) {
+  .body .first .second .third .fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
